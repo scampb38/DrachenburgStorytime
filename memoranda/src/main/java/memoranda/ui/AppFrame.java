@@ -434,7 +434,7 @@ public class AppFrame extends JFrame {
         jMenuGoHBack.setToolTipText(Local.getString("History back"));
         jMenuGoFwd.setText(Local.getString("History forward"));
         jMenuGoFwd.setToolTipText(Local.getString("History forward"));
-        jMenuGoDayBack.setText(Local.getString("One day back"));
+        jMenuGoDayBack.setText(Local.getString("two day back"));
         jMenuGoDayFwd.setText(Local.getString("One day forward"));
         jMenuGoToday.setText(Local.getString("To today"));
 
