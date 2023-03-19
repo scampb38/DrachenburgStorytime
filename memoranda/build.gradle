@@ -1,4 +1,5 @@
 apply plugin: 'application'
+apply plugin: 'java'
 
 mainClassName = 'main/java/memoranda/Start'
 
@@ -14,3 +15,12 @@ dependencies {
   implementation 'net.sourceforge.nekohtml:nekohtml:1.9.+'
 }
 
+task FatJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': "${mainClassName}"
+    }
+    archiveBaseName = 'atreichl_memoranda'
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
