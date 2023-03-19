@@ -116,7 +116,7 @@ public class AppFrame extends JFrame {
     };
     
     public Action exportNotesAction =
-                new AbstractAction(Local.getString("Export notes") + "...") {
+                new AbstractAction(Local.getString("don't Export notes") + "...") {
 
                 public void actionPerformed(ActionEvent e) {
                         ppExport_actionPerformed(e);
