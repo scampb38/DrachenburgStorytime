@@ -1,4 +1,4 @@
-Shea Campbell: 
+Shea Campbell: https://github.com/mmfay/cochemStoryTime/pull/6
 
 Gavin Beaudry: https://github.com/kallseit/marienburg_story/pull/10
 
